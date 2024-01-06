@@ -1,0 +1,99 @@
+\documentclass{report}
+
+\begin{document}
+
+% Title page
+\title{Unified Code for Collocation Multistep Methods in Solving Stiff Systems of Boundary Value Problems}
+\author{OKWHAROBO, Solomon Monday}
+\date{\today}
+\maketitle
+
+
+% Dedication
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+    \LARGE\textbf{Dedication}
+    
+    \vspace{1cm}
+    \large
+    I dedicate this project to my Mother,\\
+    who have always been a source of inspiration\\
+    and unwavering support throughout my academic journey.
+
+    \vspace{2cm}
+    \textit{Your dedication and encouragement have been my driving force.}
+\end{titlepage}
+
+
+%Acknowledgements
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+    \LARGE\textbf{Acknowledgments}
+    
+    \vspace{1cm}
+    \large
+    I would like to express my deepest gratitude to God, the source of all wisdom and strength, for guiding me throughout this academic journey.
+
+    \vspace{0.5cm}
+    My heartfelt thanks go to my mother, whose unwavering support, encouragement, and sacrifices have been the driving force behind my success.
+
+    \vspace{0.5cm}
+    I am immensely grateful to my supervisor, Prof J.O Fatokun, for their invaluable guidance, mentorship, and expertise. Their insights and encouragement significantly contributed to the completion of this project.
+
+    \vspace{0.5cm}
+    Special thanks to Dr. Akewe, Dr. Okoro, Dr. Evans, and Dr. Akinnukawe for their support, constructive feedback, and contributions to my academic and personal development.
+
+    \vspace{2cm}
+    \textit{Your support has been instrumental, and I am deeply appreciative.}
+\end{titlepage}
+
+% Abstract
+\begin{abstract}
+    This project introduces a unified python numerical code that integrates collocation and multistep methods for solving stiff systems of boundary value problems (BVPs). Stiff BVPs, characterized by rapidly changing components, pose challenges in numerical analysis. The code aims to balance accuracy and computational efficiency by seamlessly combining the strengths of collocation methods in capturing local behavior and multistep methods in handling temporal evolution. The research includes parametric studies to assess the code's versatility and explores its impact on diverse stiff BVPs. The documentation provides clear guidance for users, ensuring accessibility and usability of the developed code.
+    \end{abstract}
+
+
+% Table of Contents
+\tableofcontents
+
+% List of Figures (optional)
+\listoffigures
+
+% List of Tables (optional)
+\listoftables
+
+% List of Abbreviations (optional)
+\chapter*{List of Abbreviations}
+\begin{tabular}{ll}
+    ODE : & Ordinary Differential Equation \\
+    BVP : & Boundary Value Problem \\
+    IVP : & Initial Value Problem \\
+    % Add more abbreviations as needed
+\end{tabular}
+
+
+% Include the content of chap 1/1.tex here
+\input{chapters/1.tex}
+ 
+
+\input{chapters/2.tex}
+% Include the content of chap 2/2.tex here
+
+% Add more chapters as needed
+
+\bibliographystyle{plain}
+\bibliography{references/reference}
+
+% References
+\begin{thebibliography}{9}
+  
+\end{thebibliography}
+                                                                                                                                                                                                                 
+% Appendices (optional)
+\appendix
+\chapter{Appendix A}
+% Include the content of appendix A.tex here
+
+\end{document}

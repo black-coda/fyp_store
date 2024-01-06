@@ -1,0 +1,211 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{float}
+
+\geometry{margin=1in}
+
+\title{Exponential and Logarithmic Functions in Complex Analysis}
+\author{OKWHAROBO Solomon Monday}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\thispagestyle{empty} % No page number for this page
+
+\begin{center}
+    \vspace{6cm}
+    \textbf{Anchor University} \\
+    \textbf{Department of Mathematics} \\
+    \textbf{AUL/SCI/20/00605} \\
+    \textbf{Dr. Okoro S.I}
+\end{center}
+
+
+
+
+
+\newpage
+
+\setcounter{page}{1} % Start page numbering from here
+
+\section{Introduction}
+
+The exponential and logarithm functions are fundamental tools in complex analysis, playing crucial roles in solving complex equations, analyzing complex functions, and understanding the behavior of complex numbers.
+
+The exponential function is defined as the function $f(z) = e^z$, where $e$ is Euler's number and $z$ is a complex number. The logarithmic function is defined as the inverse of the exponential function, i.e., $f(z) = \text{Log}(z)$, where $\text{Log}(z)$ is the principal value of the logarithm of $z$.
+
+This report aims to explore the properties, applications, and significance of exponential and logarithmic functions in complex analysis. Through illustrative examples and in-depth discussions, we seek to highlight the elegance and utility of these functions in unraveling the complexities of the complex plane. By the end of this exploration, it is our hope that the reader gains a deeper appreciation for the intricate interplay between exponential and logarithmic functions in the context of complex analysis.
+
+\section{Exponential Function in Complex Analysis}
+
+Discuss the complex exponential function and Euler's formula. Include mathematical definitions and properties.
+
+\subsection{Euler's Formula}
+
+\textbf{Definition:} The exponential function of a complex variable $z = x + iy$, where x and y are real, is defined as
+
+\[e^{z} = e^{x + iy} = e^{x}e^{iy} = e^{x}(\cos(y) + i \sin(y)) = e^{x}cis(y) \]
+
+recall that:
+\[ e^{ix} =  \cos(x) + i \sin(x) \]
+
+It's important to note that the exponential function is periodic with period $2\pi i$, i.e.,
+
+\[e^{z + 2\pi i} = e^{z} \]
+
+\textbf{Proof:} Let $z = x + iy$, where $x$ and $y$ are real. Then by definition,
+
+\[ e^{z} = e^{x + iy} = e^{x}e^{iy} = e^{x}[\cos(y+ 2k\pi) + i \sin(y + 2k\pi)] \]
+\[ =  e^{x}e^{i(y + 2k\pi)} \]
+\[ =  e^{x+iy}e^{2k\pi i} \]
+\[ =  e^{z + 2k\pi i} \]
+
+i.e, $e^{z}$ remains unchanged when $z$ is increased by $2\pi i$. Hence, the exponential function is periodic with period $2\pi i$.
+
+
+\subsection{Illustrative Example}
+
+\textbf{Example 1:} Split up into real and imaginery:
+$e^{5 + {\frac{1}{2}i\pi}}$.
+
+\[e^{5 + {\frac{1}{2}i\pi}} = e^{5}e^{\frac{1}{2}i\pi} = e^{5}(\cos(\frac{1}{2}\pi) + i \sin(\frac{1}{2}\pi)) = e^{5}i \]
+
+Hence: \\
+
+$Re\{e^{5 + {\frac{1}{2}i\pi}}\} = 0, Im\{e^{5 + {\frac{1}{2}i\pi}}\} = e^{5}$
+
+
+
+\textbf{Example 2:} Find the real and imaginary parts of $e^{z}$, where $z = 5 + 3i$.
+\[(5 + 3i)^{2} = 25 + 9i^{2} + 30i = 16 + 30i\]
+Hence
+\[e^{(5+3i)^{2}} = e^{16+30i} = e^{16}(cos30+isin30)\]
+$\therefore$
+\[Re\{z\} = e^{16}cos(30), Im\{z\} = e^{16}sin(30)\]
+
+
+\subsection{Euler's Exponential Value for sinx and cosx}
+For all real values of x, we know that:
+
+\begin{center}
+    \begin{eqnarray}
+       & e^{ix} = cosx + isinx \\
+       & e^{-ix} = cosx - isinx
+    \end{eqnarray}
+\end{center}
+
+by adding (1) and (2), we have:
+\begin{center}
+    \begin{eqnarray}
+        &cos x = \frac{e^{ix}+ e^{-ix}}{2}\\
+        &sin x = \frac{e^{ix}- e^{-ix}}{2i}
+    \end{eqnarray}
+\end{center}
+from (3) and (4) other trigonometric function (tanx, cotx, secx) can be derived 
+\section{Logarithmic Function in Complex Analysis}
+
+\textbf{Definition:}
+\newline
+if $w = e^{z}$, where z and $w$ are complex number, then $z$ is called a logarithm to $w$ to the base $e$, thus
+
+\[log_{e}w = z\]
+
+We finally introduce the complex logarithm, which is more complicated than the real logarithm (which it includes as a special case) and historically puzzled mathematicians for some time (so if you first get puzzled—which need not happen!—be patient and work through this section with extra care)
+
+The Natural logarithm of z, is also some times denoted by $\ln$, and is the inverse of exponential function, as seen above. \\
+\textbf{Note:} $z \neq 0$, since $e^{0} \neq 0$
+
+\begin{center}
+    if we set $w= u+iv$, $z = re^{i\theta}$
+    \begin{eqnarray}
+        e^{w} = e^{u+iv} = re^{i\theta}
+    \end{eqnarray}
+    by equality comparison
+    \begin{eqnarray}
+        e^{u} = r , v = \theta, u = \ln r,
+    \end{eqnarray}
+\end{center}
+
+Hence, $w = u + iv = \ln z$ is given by
+
+\begin{center}
+    \begin{eqnarray}
+        \ln z = \ln r + i\theta
+    \end{eqnarray}
+\end{center}
+
+Now comes an important point (without analog in real calculus). Since the argument of \(z\) is determined only up to integer multiples of the complex natural logarithm, it is infinitely many-valued. The value of \(\ln z\) corresponding to the principal value \(\text{Arg} z\) (see Sec. 13.2) is denoted by \(\text{Ln} z\) (\(\text{Ln}\) with capital L) and is called the principal value of \(\ln z\). Thus,
+\begin{equation}
+    \ln z = \ln |z| + i\,\text{Arg} z. \tag{2}
+\end{equation}
+
+
+The uniqueness of \(\text{Arg} z\) for given \(z\) implies that \(\text{Log} z\) is single-valued, that is, a function in the usual sense. Since the other values of \(\text{arg} z\) differ by integer multiples of \(2\pi\), the other values of \(\ln z\) are given by
+\begin{equation}
+    \ln z = \text{Ln} z + 2\pi ni, \quad n \in \mathbb{Z}. \tag{3}
+\end{equation}
+
+They all have the same real part, and their imaginary parts differ by integer multiples of \(2\pi\).
+
+If \(z\) is a positive real number, then \(\text{Arg} z = 0\) and $ \textbf{Ln} z $ becomes identical to the real natural logarithm known from calculus. If \(z\) is a negative real number (so that the natural logarithm of calculus is not defined!), then \(\text{Arg} z = \pi\) and
+\begin{equation}
+    \text{Ln} z = \ln |z| + i\pi. \tag{4a}
+\end{equation}
+\section{Illustrative Example}
+
+\textbf{Question:} Find the principal value \( \text{Ln} z \) for the following complex numbers:
+
+1. \( z = -11 \):
+\[
+\text{Ln}(-11) = \ln|{-11}| + i\pi = \ln 11 + i\pi
+\]
+
+2. \( z = 4 + 4i \):
+\[
+\text{Ln}(4 + 4i) = \ln(4\sqrt{2}) + i\left(\frac{\pi}{4} + 2\pi n\right) \quad \text{for } n \in \mathbb{Z}
+\]
+
+3. \( z = e^i \):
+\[
+\text{Ln}(e^i) = i
+\]
+
+
+
+
+
+\section{Applications}
+
+Discuss the applications of exponential and logarithmic functions in various branches of mathematics and physics. Highlight their significance in complex analysis.
+
+\section{Application of Logarithm and Exponential in Complex Analysis to Real-Life Problems}
+
+In real-life scenarios, complex analysis plays a crucial role in various applications. Logarithmic and exponential functions in complex analysis find applications in diverse fields such as engineering, physics, and signal processing. Let's explore a specific example related to electrical engineering:
+
+\subsection{Example: Electrical Impedance in AC Circuits}
+
+Consider an electrical circuit with an alternating current (AC) source. The voltage across a component in the circuit, such as a capacitor, can be modeled using complex numbers. The relationship between voltage (\(V\)), current (\(I\)), and impedance (\(Z\)) in a capacitor is given by:
+
+\[ V = I \cdot Z \]
+
+For a capacitor, the impedance \(Z\) is given by:
+
+\[ Z = \frac{1}{j\omega C} \]
+
+Here, \(j\) represents the imaginary unit, \(\omega\) is the angular frequency, and \(C\) is the capacitance. The impedance involves complex numbers, and logarithmic and exponential functions help analyze and design AC circuits.
+
+The natural logarithm (\(\ln\)) and exponential (\(e^x\)) functions come into play when solving and manipulating these complex expressions. Engineers use these mathematical tools to optimize circuit designs, analyze signal processing systems, and ensure efficient energy transfer in various electronic devices.
+
+Understanding the behavior of complex exponential and logarithmic functions in electrical systems is essential for designing reliable and effective circuits in real-world applications.
+
+This example highlights how the tools of complex analysis, including logarithmic and exponential functions, contribute to solving practical engineering problems.
+
+\end{document}
+
+
+\end{document}

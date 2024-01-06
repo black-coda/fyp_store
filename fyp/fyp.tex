@@ -1,0 +1,106 @@
+\documentclass[12pt, a4paper, twoside]{report}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{titlesec}
+\usepackage{tocloft}
+\usepackage{fancyhdr}
+\usepackage{lipsum} % For generating dummy text
+
+% Page layout
+\geometry{top=2.5cm, bottom=2.5cm, left=3.5cm, right=2.5cm}
+\setlength{\parskip}{1em}
+\onehalfspacing
+
+% Chapter formatting
+\titleformat{\chapter}[display]{\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
+
+% Header and Footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\thepage}
+\fancyhead[RE,LO]{\leftmark}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% Table of Contents formatting
+\renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cfttoctitlefont}{\hfill\Large\bfseries}
+\renewcommand{\cftaftertoctitle}{\hfill}
+\renewcommand{\cftbeforechapskip}{\baselineskip}
+
+\begin{document}
+
+% Title Page
+\begin{titlepage}
+    \centering
+    \vspace*{1cm}
+    \includegraphics[width=0.3\textwidth]{aul_logo.png}\par
+    \vspace{1.5cm}
+    {\scshape\LARGE University Name \par}
+    \vspace{1cm}
+    {\scshape\Large Final Year Project Report\par}
+    \vspace{1.5cm}
+    {\huge\bfseries Unified Code for Collocation Multistep Methods for Solving Stiff System of a BVP\par}
+    \vspace{2cm}
+    {\Large\itshape Your Name\par}
+    \vfill
+    supervised by\par
+    \textsc{Supervisor's Name}
+
+    \vfill
+
+    % Bottom of the page
+    {\large \today\par}
+\end{titlepage}
+
+% Abstract
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+\lipsum[1]
+
+% Acknowledgements
+\chapter*{Acknowledgements}
+\addcontentsline{toc}{chapter}{Acknowledgements}
+\lipsum[2]
+
+% Table of Contents
+\tableofcontents
+
+% List of Figures and Tables
+\listoffigures
+\listoftables
+
+% Chapters
+\chapter{Introduction}
+\lipsum[3]
+
+\chapter{Literature Review}
+\lipsum[4]
+
+\chapter{Theoretical Framework}
+\lipsum[5]
+
+\chapter{Implementation Details}
+\lipsum[6]
+
+\chapter{Results and Discussion}
+\lipsum[7]
+
+% Chapter 6: Conclusion and Future Work
+\chapter{Conclusion and Future Work}
+\lipsum[8]
+
+% References
+\chapter*{References}
+\addcontentsline{toc}{chapter}{References}
+\lipsum[9]
+
+% Appendices
+\appendix
+\chapter{Appendix A: Code Listings}
+\lipsum[10]
+
+\end{document}

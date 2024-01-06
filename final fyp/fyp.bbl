@@ -1,0 +1,33 @@
+\begin{thebibliography}{1}
+
+\bibitem{wikipedia-contributors-2023}
+Wikipedia contributors.
+\newblock {Numerical analysis}, 12 2023.
+
+\bibitem{wiki-bvp}
+Wikipedia contributors.
+\newblock Boundary value problem, 2024.
+\newblock Accessed: January 3, 2024.
+
+\bibitem{unknown-author-no-date}
+Mathworks Inc.
+\newblock {Solve Stiff ODEs -MATLAB and Simulink}, 12 2023.
+
+\bibitem{isibor-2020}
+Uwaifo~Nelson Isibor.
+\newblock {Third derivative block hybrid Obrechkoff method for Numerical
+  solution of stiff initial value problems}.
+\newblock pages 224--252. 1 2020.
+
+\bibitem{lambert1977}
+J.~D. Lambert.
+\newblock The initial value problem for ordinary differential equations.
+\newblock In D.~Jacobs, editor, {\em The State of the Art in Numerical
+  Analysis}, pages 451--501. Academic Press, New York, 1977.
+
+\bibitem{ogwo}
+M.O. Ogwo, D. Omale P.B.~Ojih.
+\newblock {MATHEMATICAL ANALYSIS OF STIFF AND NON-STIFF INITIAL VALUE PROBLEMS
+  OF ORDINARY DIFFERENTIAL EQUATION USING MATLAB}, 9 2014.
+
+\end{thebibliography}

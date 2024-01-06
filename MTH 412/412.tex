@@ -1,0 +1,202 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{float}
+
+\geometry{margin=1in}
+
+\title{MTH 412: Functional Analysis Assignment}
+\author{OKWHAROBO Solomon Monday}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\thispagestyle{empty} % No page number for this page
+
+\begin{center}
+    \vspace{6cm}
+    \textbf{Anchor University} \\
+    \textbf{Department of Mathematics} \\
+    \textbf{AUL/SCI/20/00605}
+\end{center}
+
+
+
+
+
+\newpage
+
+\setcounter{page}{1} % Start page numbering from here
+
+
+
+
+\section{Q1: Prove the third condition for Normed Space X = $\mathbb{R}^{2}$ }
+
+\textbf{Statement:}Let $X = \mathbb{R}^{2}$ for arbitiary $\bar{x}, \bar{y}$,
+
+where $\bar{x} = (x_{1}, x_{2})$ and $\bar{y} = (y_{1}, y_{2})$, and with $\alpha \in \mathbb{R}$  define the operation, additon and scalar multiplication as:
+\newline
+additon:
+\[\bar{x} + \bar{y} = (x_{1} + y_{1}, x_{2} + y_{2})\]
+scalar multiplication:
+\[\alpha \bar{x} = (\alpha x_{1}, \alpha x_{2})\]
+with these definitions, $\mathbb{R}^{2}$ is a vector space.
+for each $\bar{x} \in X$, we define the maximum norm
+\[\|\bar{x}\|_{\infty} = \max\{|x_{1}|, |x_{2}|\}\] is a normed on $\mathbb{R}^{2}$.
+\newline
+\textbf{Prove that the third condition for normed space is satisfied.}
+\newblock
+
+\textbf{Proof:}
+
+Let $\bar{x} = (x_{1}, x_{2})$ and $\bar{y} = (y_{1}, y_{2})$ be arbitrary elements of $\mathbb{R}^{2}$ and $\alpha \in \mathbb{R}$,
+\newline
+\textbf{N3: }$\| x+ y \|_{\infty} \leq  \| x \|_{\infty} + \|y\|_{\infty} $, then,
+
+
+\begin{center}
+    \begin{eqnarray*}
+      \| x+ y \|_{\infty} =\\
+      & = \|x_{1} + y_{1},x_{2} + y_{2}\| \\
+      & = \max\{|x_{1} + y_{1}|, |x_{2} + y_{2}|\} \\
+      & = \underset{1 < i < 2}{\max(\| x_i \| + \| y_i \|)} \\
+      & \leq  \underset{1 < i < 2}{\max(\| x_i \|) + \max(\| y_i \|)} \\
+      & \leq  \|\bar{x}\|_{\infty} + \|\bar{y}\|_{\infty} \\
+      & = \| x + y \|_{\infty} \leq \|\bar{x}\|_{\infty} + \|\bar{y}\|_{\infty}
+    \end{eqnarray*}
+\end{center}
+
+
+\section{Q2: Prove that X = $\mathbb{R}$ is a Normed Space}
+
+\textbf{Statement:}Let $X = \mathbb{R}$ for arbitiary $\bar{x},$,
+
+where $\bar{x} = (x_{1}, x_{2},x_{3}, x_{4},\dots x_{n}) \in \mathbb{R}^{n}$, and with $\alpha \in \mathbb{R}$, then $\| \bar{x}\|_{p} = \|(x_{1}, x_{2},x_{3}, x_{4},\dots x_{n})\|_{p}$ \\
+$ = (\sum_{i = 1}^{n} \|x_{i}\|^{p})^{\frac{1}{p}}$
+verify that $ \|.\|$ is a norm. \\
+
+\subsection*{\textbf{Proof:}}
+
+
+
+
+\subsection*{N1: $ \|x\| > 0,$ iff $x = 0$} 
+
+\hbox{
+  $(\sum_{i = 1}^{n} \|x_{i}\|^{p})^{\frac{1}{p}} \geq 0$ \\$\| \bar{x}\|_{p} \geq 0$ clearly because absolute value of any value is greater than or equal to 1
+   \\
+
+}
+\textbf{Also,}
+
+if $\bar{x} = 0 \implies \forall 1 < i < n \implies (\sum_{i = 1}^{n} \|x_{i}\|^{p})^{\frac{1}{p}} = 0$ \\
+
+
+\subsection*{N2: $ \| \alpha \bar{x} \|_{p} = | \alpha |  \|\bar{x}\|$} 
+
+
+\begin{center}
+    \begin{eqnarray*}
+      \| \alpha \bar{x} \|_{p} =  \| \alpha(x_{1}, x_{2},x_{3}, x_{4},\dots x_{n}) \|_{p} = (\sum_{i = 1}^{n} \|x_{i}\|^{p})^{\frac{1}{p}} \\
+      = \biggl(|\alpha|^{p}\biggr)^{\frac{1}{p}} \biggl(\sum_{i = 1}^{n} \|x_{i}\|^{p}\biggr)^{\frac{1}{p}} \\
+      = |\alpha| \biggl(\sum_{i = 1}^{n} \|x_{i}\|^{p}\biggr)^{\frac{1}{p}} \\
+      = |\alpha|\| \bar{x} \|_{p}
+    \end{eqnarray*}
+\end{center}
+
+
+\subsection*{N3: $\| x+ y \|_{p} \leq  \| x \|_{p} + \|y\|_{p} $} 
+\textbf{We need Holder's inequality}
+
+\begin{center}
+    \begin{eqnarray*}
+      \|\bar{x} + \bar{y}\|_{p}^{p} = \|(x_{1}+ y_{1}) + (x_{2}+ y_{2}) + \dots +(x_{n}+ y_{n})\| \\
+      = \sum_{i = 1}^{n}|x_{i} + y_{i}|^{p}  = \sum_{i = 1}^{n}|x_{i} + y_{i}|^{p-1} |x_{i} + y_{i}|\\  
+      Applying Holder's Theorem \\
+      \leq \sum_{i = 1}^{n}|x_{i}||x_{i} + y_{i}|^{p-1} + \sum_{i = 1}^{n}|y_{i}||x_{i} + y_{i}|^{p-1} \\
+      \leq \biggl[\big(\sum_{i = 1}^{n}|x_{i}|^{p}\big)^\frac{1}{p}\big(\sum_{i = 1}^{n}|x_{i}+ y_{i}|^{q(p-1)} \big)^{\frac{1}{q}}\biggr] +  \biggl[\big(\sum_{i = 1}^{n}|y_{i}|^{p}\big)^\frac{1}{p}\big(\sum_{i = 1}^{n}|x_{i}+ y_{i}|^{q(p-1)} \big)^{\frac{1}{q}}\biggr] \\
+      \leq \Biggl(\|x\|_{p} + \|y\|_{p}\Biggr)\Biggl(\sum_{i = 1}^{n}|x_{i}+ y_{i}| \Biggr)^{\frac{p}{q}} \\
+      \implies \|\bar{x} + \bar{y}\|_{p} = \|\bar{x}\|_{p} + \|\bar{y}\|_{q}
+    \end{eqnarray*}
+Recall in Holder's inequality: $\frac{1}{p} + \frac{1}{q} = 1$,1 - $\frac{1}{p} =  \frac{p-1}{p} = 1$ \\
+
+$p = q(p-1)$
+
+
+
+
+\end{center}
+
+
+\section{Q3: Proof that $l_\infty$ is a Complete Normed Space}
+
+\textbf{Step 1: Cauchy Sequences in $l_\infty$}
+
+Consider a Cauchy sequence $(x^{(k)})$ in $l_\infty$, where $x^{(k)} = (x_n^{(k)})$ for each $k$. This means that for any $\varepsilon > 0$, there exists an $N$ such that for all $k, m \geq N$:
+\[ \|x^{(k)} - x^{(m)}\|_\infty = \sup_{n \in \mathbb{N}} |x_n^{(k)} - x_n^{(m)}| < \varepsilon \]
+
+\textbf{Step 2: Define the Limit Sequence}
+
+Define the sequence $x = (x_n)$ as follows:
+\[ x_n = \lim_{k \to \infty} x_n^{(k)} \]
+
+\textbf{Step 3: Prove $x \in l_\infty$}
+
+Now, we need to show that $x \in l_\infty$, i.e., the sequence $x$ is bounded. Consider the Cauchy property and the fact that limits preserve inequalities:
+\[ |x_n| = \lim_{k \to \infty} |x_n^{(k)}| \leq \sup_{n \in \mathbb{N}} |x_n^{(k)}| = \|x^{(k)}\|_\infty \]
+
+Since $(x^{(k)})$ is a Cauchy sequence, the right side is bounded. Therefore, $|x_n|$ is bounded for each $n$, implying that $x \in l_\infty$.
+
+\textbf{Step 4: Prove Convergence in $l_\infty$}
+
+We now need to show that $x^{(k)}$ converges to $x$ in the $l_\infty$ norm:
+\[ \|x^{(k)} - x\|_\infty = \sup_{n \in \mathbb{N}} |x_n^{(k)} - x_n| \to 0 \text{ as } k \to \infty \]
+
+This follows from the definition of $x_n$ and the convergence of $x_n^{(k)}$ to $x_n$ for each $n$.
+
+\textbf{Conclusion:}
+
+Since every Cauchy sequence in $l_\infty$ converges to a limit in $l_\infty$, we can conclude that $l_\infty$ is a complete normed space.
+
+\section{Q4: Proof: Completeness of \(l_p\) for \(1 < p < \infty\)}
+
+\textbf{Step 1: Cauchy Sequences in \(l_p\):}
+
+Consider a Cauchy sequence \((x^{(k)})\) in \(l_p\), where \(x^{(k)} = (x_n^{(k)})\) for each \(k\). This means that for any \(\varepsilon > 0\), there exists an \(N\) such that for all \(k, m \geq N\):
+
+\[ \|x^{(k)} - x^{(m)}\|_p = \left( \sum_{n=1}^{\infty} |x_n^{(k)} - x_n^{(m)}|^p \right)^{1/p} < \varepsilon \]
+
+\textbf{Step 2: Define the Limit Sequence:}
+
+Define the sequence \(x = (x_n)\) as follows:
+
+\[ x_n = \lim_{k \to \infty} x_n^{(k)} \]
+
+\textbf{Step 3: Prove \(x \in l_p\):}
+
+Now, we need to show that \(x \in l_p\), i.e., the sequence \(x\) is in \(l_p\). We'll use the fact that the \(p\)-th root of the sum of the \(p\)-th powers is a continuous function. 
+
+\[ |x_n|^p = \lim_{k \to \infty} |x_n^{(k)}|^p \leq \left( \lim_{k \to \infty} |x_n^{(k)}|^p \right)^{1/p} = \lim_{k \to \infty} |x_n^{(k)}| \]
+
+Since \((x^{(k)})\) is a Cauchy sequence, the right side is finite. Therefore, \(|x_n|^p\) is bounded for each \(n\), implying that \(x \in l_p\).
+
+\textbf{Step 4: Prove Convergence in \(l_p\):}
+
+We now need to show that \(x^{(k)}\) converges to \(x\) in the \(l_p\) norm:
+
+\[ \|x^{(k)} - x\|_p = \left( \sum_{n=1}^{\infty} |x_n^{(k)} - x_n|^p \right)^{1/p} \to 0 \text{ as } k \to \infty \]
+
+This follows from the definition of \(x_n\) and the convergence of \(x_n^{(k)}\) to \(x_n\) for each \(n\).
+
+\textbf{Conclusion:}
+
+Since every Cauchy sequence in \(l_p\) converges to a limit in \(l_p\), we can conclude that \(l_p\) is a complete normed space for \(1 < p < \infty\).
+
+
+
+
+\end{document}

@@ -1,0 +1,53 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: fyp.aux
+Reallocating 'name_of_file' (item size: 1) to 6 items.
+The style file: plain.bst
+Reallocating 'name_of_file' (item size: 1) to 21 items.
+Database file #1: references/reference.bib
+Warning--entry type for "wiki-bvp" isn't style-file defined
+--line 73 of file references/reference.bib
+Warning--empty booktitle in isibor-2020
+Warning--empty publisher in isibor-2020
+You've used 6 entries,
+            2118 wiz_defined-function locations,
+            528 strings with 4682 characters,
+and the built_in function-call counts, 1708 in all, are:
+= -- 167
+> -- 46
+< -- 2
++ -- 20
+- -- 13
+* -- 81
+:= -- 263
+add.period$ -- 17
+call.type$ -- 6
+change.case$ -- 24
+chr.to.int$ -- 0
+cite$ -- 8
+duplicate$ -- 75
+empty$ -- 170
+format.name$ -- 13
+if$ -- 383
+int.to.chr$ -- 0
+int.to.str$ -- 6
+missing$ -- 2
+newline$ -- 30
+num.names$ -- 14
+pop$ -- 51
+preamble$ -- 1
+purify$ -- 18
+quote$ -- 0
+skip$ -- 67
+stack$ -- 0
+substring$ -- 95
+swap$ -- 23
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 24
+warning$ -- 2
+while$ -- 19
+width$ -- 7
+write$ -- 59
+(There were 3 warnings)

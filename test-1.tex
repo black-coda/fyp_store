@@ -1,0 +1,105 @@
+\documentclass{article}
+
+\begin{document}
+
+\title{Assignment: History of Mathematics}
+\author{OKWHAROBO Solomon M \\
+        Matriculation Number: AUL/SCI/20/00605 \\
+        Course: History of Mathematics}
+\date{}
+\maketitle
+
+\section*{Fermat's Little Theorem, Application of Number Theory, and Euclidean Algorithm}
+
+\subsection{Fermat's Little Theorem}
+
+The statement that any number of the form $2^{2n} + 1$ must be prime is not a true theorem, and it is not true in general. This statement is incorrect. There are counterexamples where $2^{2n} + 1$ is composite (not prime).
+
+For example, if $n = 1$:
+\[2^{2 \times 1} + 1 = 2^2 + 1 = 5\]
+
+In this case, $5$ is prime. However, if $n = 2$:
+\[2^{2 \times 2} + 1 = 2^4 + 1 = 17\]
+
+While $17$ is also prime, it doesn't hold for all values of $n$. For instance, if $n = 3$:
+\[2^{2 \times 3} + 1 = 2^6 + 1 = 65\]
+
+Here, $65$ is not prime ($65 = 5 \times 13$).
+
+There is no theorem that asserts the primality of all numbers of the form $2^{2n} + 1$. It's crucial to be cautious with such statements and verify them through mathematical reasoning and examples.
+\section{Application of Number Theory}
+
+\subsection{Example: Cryptography}
+
+One notable application of number theory is in the field of cryptography, where the properties of prime numbers play a crucial role. For instance, the RSA algorithm, widely used for secure communication, relies on the difficulty of factoring the product of two large prime numbers. The security of RSA is based on the application of number theory principles, making it a robust encryption method.
+
+\subsection{Application 1: Primality Testing}
+
+Number theory is employed in algorithms for primality testing. Determining whether a number is prime is a critical task in various applications, including computer security and cryptographic protocols.
+
+\subsection{Application 2: Error-Correcting Codes}
+
+Coding theory, a branch of number theory, is used to design error-correcting codes. These codes ensure reliable data transmission by detecting and correcting errors that may occur during communication or storage.
+
+\subsection{Application 3: Diophantine Equations}
+
+Number theory deals with Diophantine equations, which involve finding integer solutions to polynomial equations. These equations have applications in various areas, including physics, engineering, and computer science.
+
+\subsection{Application 4: Random Number Generation}
+
+Number theory concepts are applied in the design of algorithms for generating random numbers. Randomized algorithms have applications in simulations and probabilistic computations.
+
+\subsection{Application 5: Operations Research}
+
+Some optimization problems in operations research involve integer solutions, and number theory techniques can be used to analyze and solve these problems.
+
+\section{Euclidean Algorithm}
+
+The Euclidean Algorithm is a method for finding the greatest common divisor (GCD) of two integers. Let's use it to find the GCD of 40 and 65.
+
+\subsection{Example: GCD of 40 and 65}
+
+The Euclidean algorithm is a method for finding the greatest common divisor (GCD) of two integers. It works by repeatedly applying the division algorithm until the remainder is zero. Let's use the Euclidean algorithm to find the GCD of \(65\) and another number, say \(40\), as an example.
+
+\[ \textnormal{GCD}(65, 40) \]
+
+Here's how the Euclidean algorithm works step by step:
+
+\begin{enumerate}
+    \item \textbf{Step 1:} Divide \(65\) by \(40\) to get a quotient and a remainder:
+    \[ 65 = 40 \times 1 + 25 \]
+    
+    \item \textbf{Step 2:} Now, take the divisor (\(40\)) as the new dividend and the remainder (\(25\)) as the new divisor and repeat the process:
+    \[ 40 = 25 \times 1 + 15 \]
+    
+    \item \textbf{Step 3:} Repeat the process again:
+    \[ 25 = 15 \times 1 + 10 \]
+    
+    \item \textbf{Step 4:} Repeat:
+    \[ 15 = 10 \times 1 + 5 \]
+    
+    \item \textbf{Step 5:} Repeat:
+    \[ 10 = 5 \times 2 + 0 \]
+\end{enumerate}
+
+The moment we reach a remainder of \(0\), the divisor at that step becomes the GCD. In this case, the GCD of \(65\) and \(40\) is \(5\).
+
+So, \[ \textnormal{GCD}(65, 40) \]= 5.
+
+If you want to find the GCD of \(65\) alone, the Euclidean algorithm can be applied with another number (e.g., \(0\)):
+
+\[ \textnormal{GCD}(65, 0) \]
+
+
+The algorithm would proceed as follows:
+
+\begin{enumerate}
+    \item \(65 = 0 \times q + 65\)
+    \item \(0 = 65 \times q + 0\)
+\end{enumerate}
+
+At this point, we have a remainder of \(0\), and the divisor (\(65\)) is the GCD. Therefore, \[ \textnormal{GCD}(65, 0) = 0\]
+.
+
+The GCD of $40$ and $65$ is the last non-zero remainder, which is $5$.
+\end{document}

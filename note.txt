@@ -1,0 +1,81 @@
+\documentclass{article}
+\usepackage{amsmath, amssymb}
+
+\begin{document}
+
+\title{Exponential and Logarithmic Functions in Complex Analysis}
+\author{OKWHAROBO Solomon Monday}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\thispagestyle{empty} % No page number for this page
+
+\begin{center}
+    \vspace{6cm}
+    \textbf{Anchor University} \\
+    \textbf{Department of Mathematics} \\
+    \textbf{AUL/SCI/20/00605}
+\end{center}
+
+
+
+
+
+\newpage
+
+\setcounter{page}{1} 
+
+\section*{Forward Direction}
+
+Assume $\phi(t)$ is a solution to the IVP. This means it satisfies the differential equation and the initial condition. We need to show the three conditions hold:
+
+\begin{enumerate}
+  \item[i)] $(t, \phi(t)) \in U$ for all $t \in I$: This follows from the fact that $\phi(t)$ is a solution, and solutions should remain within the domain of $f(t, x)$.
+  
+  \item[ii)] $\phi$ is continuous on $I$: This can be shown using the continuity of $f(t, x)$ and standard results on the continuity of solutions to ODEs.
+  
+  \item[iii)] $\phi(t) = x_0 + \int_{t_0}^{t} f(s, \phi(s)) \, ds$: This follows from the integral form of the solution.
+\end{enumerate}
+
+\section*{Backward Direction}
+
+Assume the conditions i), ii), and iii) are satisfied. We need to show that $\phi(t)$ is a solution to the IVP:
+
+\begin{enumerate}
+  \item[a)] Show that $\phi(t)$ satisfies the differential equation $\frac{d\phi}{dt} = f(t, \phi(t))$ for all $t \in I$.
+  
+  \item[b)] Show that $\phi(t_0) = x_0$.
+\end{enumerate}
+
+These steps would involve using the given conditions, properties of continuous functions, and properties of integrals to establish that $\phi(t)$ is indeed a solution to the given IVP.
+
+\end{document}
+
+
+\documentclass{article}
+\usepackage{amsmath, amssymb}
+
+\begin{document}
+
+\title{Proof}
+\author{}
+\date{}
+\maketitle
+
+\noindent \textbf{(⇒)} Let us suppose that $\phi' = f(t, \phi)$ for all $t \in I$ and that $\phi(t_0) = x_0$. Then for all $t \in I$, $(t, \phi(t)) \in U$ (i). Also, $\phi$ is differentiable and thus continuous on $I$ (ii). Finally,
+\[\phi'(s) = f(s, \phi(s))\]
+so integrating both sides from $t_0$ to $t$,
+\[\phi(t) - \phi(t_0) = \int_{t_0}^{t} f(s, \phi(s)) \, ds\]
+and thus
+\[\phi(t) = x_0 + \int_{t_0}^{t} f(s, \phi(s)) \, ds\]
+hence (iii).
+
+\noindent \textbf{(⇐)} Assume i), ii), and iii). Then $\phi$ is differentiable on $I$, and $\phi'(t) = f(t, \phi(t))$ for all $t \in I$.
+From (iii), $\phi(t_0) = x_0 + \int_{t_0}^{t} f(s, \phi(s)) \, ds = x_0$.
+
+Note that Theorem 1.1.8 states that $\phi$ should be continuous, whereas the solution should, of course, be $C^1$, for its derivative needs to be continuous. However, this is implied by point iii). In fact, more generally, the following result holds about the regularity of solutions.
+
+\end{document}

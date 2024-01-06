@@ -1,0 +1,88 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{float}
+
+\geometry{margin=1in}
+
+\title{MTH 411: Theory of Ordinary Differential Equation Assignment}
+\author{OKWHAROBO Solomon Monday}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\thispagestyle{empty} % No page number for this page
+
+\begin{center}
+    \vspace{6cm}
+    \textbf{Anchor University} \\
+    \textbf{Department of Mathematics} \\
+    \textbf{AUL/SCI/20/00605}
+\end{center}
+
+
+
+
+
+\newpage
+
+\setcounter{page}{1} % Start page numbering from here
+
+\section{Q1:}
+\textbf{Theorem:}
+Suppose $f$ is continuous on an open set $U \subset \mathbb{R} \times \mathbb{R}^n$. Let $(t_0, x_0) \in U$, and $\phi$ be a function defined on an open set $I$ of $\mathbb{R}$ such that $t_0 \in I$. Then $\phi$ is a solution of the IVP (1.3) if, and only if,
+
+\begin{enumerate}
+    \item $\forall t \in I$, $(t, \phi(t)) \in U$.
+    \item $\phi$ is continuous on $I$.
+    \item $\forall t \in I$, $\phi(t) = x_0 + \int_{t_0}^{t} f(s, \phi(s)) \, ds$.
+\end{enumerate}
+
+\textbf{Proof:}
+
+\noindent (\textbf{$\Rightarrow$}) Let us suppose that $\phi' = f(t, \phi)$ for all $t \in I$ and that $\phi(t_0) = x_0$. Then for all $t \in I$, $(t, \phi(t)) \in U$ (i). Also, $\phi$ is differentiable and thus continuous on $I$ (ii). Finally,
+\[\phi'(s) = f(s, \phi(s))\]
+so integrating both sides from $t_0$ to $t$,
+\[\phi(t) - \phi(t_0) = \int_{t_0}^{t} f(s, \phi(s)) \, ds\]
+and thus
+\[\phi(t) = x_0 + \int_{t_0}^{t} f(s, \phi(s)) \, ds\]
+hence (iii).
+
+\noindent (\textbf{$\Leftarrow$}) Assume i), ii), and iii). Then $\phi$ is differentiable on $I$, and $\phi'(t) = f(t, \phi(t))$ for all $t \in I$.
+From (iii), $\phi(t_0) = x_0 + \int_{t_0}^{t} f(s, \phi(s)) \, ds = x_0$.
+
+
+
+
+\section{Q2:}
+
+\textbf{Claim:} If \( f \in C^k \), then all solutions \( \phi \) of the differential equation \( \frac{dx}{dt} = f(t, x) \) are of class \( C^{k+1} \).
+
+\textbf{Proof:}
+
+Assume \( f \) is \( C^k \), and let \( \phi(t) \) be a solution to the given differential equation on some open interval \( I \) containing \( t_0 \). We want to show that \( \phi \) is \( C^{k+1} \) on \( I \).
+
+\textbf{1. Existence of Derivatives:}
+Since \( \phi \) is a solution, it is differentiable. We want to show that \( \phi' \) (the first derivative) exists and is continuous.
+
+\textbf{2. Differentiability:}
+Differentiate the given differential equation with respect to \( t \):
+\[ \frac{d}{dt}\left(\frac{dx}{dt}\right) = \frac{d}{dt}f(t, \phi(t)) \]
+This gives us \( \frac{d^2\phi}{dt^2} = \frac{\partial f}{\partial t} + \frac{\partial f}{\partial x}\frac{dx}{dt} \).
+
+\textbf{3. Continuity of Derivatives:}
+Since \( f \) is \( C^k \), its partial derivatives up to order \( k \) are continuous. Also, \( \frac{dx}{dt} = f(t, \phi(t)) \) implies that \( \frac{dx}{dt} \) is continuous.
+
+\textbf{4. Inductive Step:}
+Repeat the process for higher-order derivatives. In general, you will have:
+\[ \frac{d^{k+1}\phi}{dt^{k+1}} = \text{(a sum of terms involving derivatives of } f \text{ and } \phi \text{ up to order } k) \]
+Again, continuity follows from the continuity of partial derivatives of \( f \) and lower-order derivatives of \( \phi \).
+
+Therefore, by induction, all derivatives of \( \phi \) up to order \( k+1 \) exist and are continuous, implying that \( \phi \) is of class \( C^{k+1} \).
+
+This completes the modified proof, specifically tailored for the differential equation \( \frac{dx}{dt} = f(t, x) \).
+
+\end{document}
