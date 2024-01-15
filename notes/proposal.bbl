@@ -1,0 +1,158 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Byrne%
+, Hindmarsh%
+, Jackson%
+\BCBL {}\ \BBA {} Brown%
+}{%
+Byrne%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1977}}%
+}]{%
+BYRNE1977125}
+\APACinsertmetastar {%
+BYRNE1977125}%
+\begin{APACrefauthors}%
+Byrne, G\BPBI D.%
+, Hindmarsh, A\BPBI C.%
+, Jackson, K\BPBI R.%
+\BCBL {}\ \BBA {} Brown, H\BPBI G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1977}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {A comparison of two ODE codes: GEAR and EPISODE} {A
+  comparison of two ode codes: Gear and episode}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Computers \& Chemical Engineering}{1}{2}{125--131}.
+\newblock
+\begin{APACrefURL}
+  \url{https://www.sciencedirect.com/science/article/pii/0098135477800185}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1016/0098-1354(77)80018-5} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Enright%
+, Hull%
+\BCBL {}\ \BBA {} Lindberg%
+}{%
+Enright%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1975}}%
+}]{%
+Enright1975}
+\APACinsertmetastar {%
+Enright1975}%
+\begin{APACrefauthors}%
+Enright, W\BPBI H.%
+, Hull, T\BPBI E.%
+\BCBL {}\ \BBA {} Lindberg, B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1975}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Comparing numerical methods for stiff systems of
+  O.D.E:s} {Comparing numerical methods for stiff systems of o.d.e:s}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{BIT Numerical Mathematics}{15}{1}{10--48}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1007/BF01932994} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1007/BF01932994} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Lambert%
+}{%
+Lambert%
+}{%
+{\protect \APACyear {1977}}%
+}]{%
+lambert1977}
+\APACinsertmetastar {%
+lambert1977}%
+\begin{APACrefauthors}%
+Lambert, J\BPBI D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1977}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The initial value problem for ordinary differential
+  equations} {The initial value problem for ordinary differential
+  equations}.{\BBCQ}
+\newblock
+\BIn{} D.~Jacobs\ (\BED), \APACrefbtitle {The State of the Art in Numerical
+  Analysis} {The state of the art in numerical analysis}\ (\BPGS\ 451--501).
+\newblock
+\APACaddressPublisher{New York}{Academic Press}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{Wikipedia contributors}%
+}{%
+{Wikipedia contributors}%
+}{%
+{\protect \APACyear {2023}}%
+}]{%
+enwiki:1166346639}
+\APACinsertmetastar {%
+enwiki:1166346639}%
+\begin{APACrefauthors}%
+{Wikipedia contributors}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2023}{}{}.
+\newblock
+\APACrefbtitle {Collocation method --- {Wikipedia}{,} The Free Encyclopedia.}
+  {Collocation method --- {Wikipedia}{,} the free encyclopedia.}
+\newblock
+\begin{APACrefURL}
+  \url{https://en.wikipedia.org/w/index.php?title=Collocation_method&oldid=1166346639}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{[Online; accessed 14-January-2024]}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Yatim%
+, Ibrahim%
+, Othman%
+\BCBL {}\ \BBA {} Suleiman%
+}{%
+Yatim%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2013}}%
+}]{%
+Yatim2013}
+\APACinsertmetastar {%
+Yatim2013}%
+\begin{APACrefauthors}%
+Yatim, S\BPBI A\BPBI M.%
+, Ibrahim, Z\BPBI B.%
+, Othman, K\BPBI I.%
+\BCBL {}\ \BBA {} Suleiman, M\BPBI B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2013}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {A Numerical Algorithm for Solving Stiff Ordinary
+  Differential Equations} {A numerical algorithm for solving stiff ordinary
+  differential equations}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Mathematical Problems in Engineering}{2013}{}{Article
+  ID 989381, 11}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1155/2013/989381} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1155/2013/989381} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}
