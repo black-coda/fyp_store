@@ -14,45 +14,52 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: bib/Proposal.bib
+Warning--entry type for "Faleichik2009ExplicitIO" isn't style-file defined
+--line 285 of file bib/Proposal.bib
+Warning--entry type for "cappellaro:bound-problems" isn't style-file defined
+--line 303 of file bib/Proposal.bib
+Warning--entry type for "cappellaro:unbound-problems" isn't style-file defined
+--line 321 of file bib/Proposal.bib
 apacite.bst [2013/07/21 v6.03 APA bibliography style]
-You've used 5 entries,
+You've used 17 entries,
             6951 wiz_defined-function locations,
-            1310 strings with 11814 characters,
-and the built_in function-call counts, 10178 in all, are:
-= -- 1275
-> -- 92
-< -- 439
-+ -- 508
-- -- 12
-* -- 641
-:= -- 1752
-add.period$ -- 22
-call.type$ -- 5
-change.case$ -- 86
+            1389 strings with 14755 characters,
+and the built_in function-call counts, 34902 in all, are:
+= -- 4417
+> -- 269
+< -- 1725
++ -- 1796
+- -- 41
+* -- 2230
+:= -- 6423
+add.period$ -- 72
+call.type$ -- 17
+change.case$ -- 312
 chr.to.int$ -- 0
-cite$ -- 10
-duplicate$ -- 296
-empty$ -- 412
-format.name$ -- 145
-if$ -- 1957
+cite$ -- 34
+duplicate$ -- 861
+empty$ -- 1302
+format.name$ -- 432
+if$ -- 6591
 int.to.chr$ -- 0
-int.to.str$ -- 15
+int.to.str$ -- 55
 missing$ -- 0
-newline$ -- 145
-num.names$ -- 42
-pop$ -- 179
+newline$ -- 449
+num.names$ -- 138
+pop$ -- 579
 preamble$ -- 1
-purify$ -- 20
+purify$ -- 74
 quote$ -- 0
-skip$ -- 670
+skip$ -- 2280
 stack$ -- 0
-substring$ -- 570
-swap$ -- 170
-text.length$ -- 17
+substring$ -- 1943
+swap$ -- 465
+text.length$ -- 49
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 464
+type$ -- 1640
 warning$ -- 0
-while$ -- 53
+while$ -- 157
 width$ -- 0
-write$ -- 179
+write$ -- 549
+(There were 3 warnings)
